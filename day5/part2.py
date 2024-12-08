@@ -75,7 +75,7 @@ for line in file.readlines():
 for pages in incorrect_updates:
     ordered_pages = []
 
-    for page_index in range(pages["length"] -1, -1, -1):
+    for page_index in range(pages["length"]):
         ordered_pages.append(pages[page_index])
 
     middle_point = len(ordered_pages) // 2
